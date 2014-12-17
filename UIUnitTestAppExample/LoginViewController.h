@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const kEmailTextFieldAL;
+extern NSString *const kPasswordTextFieldAL;
+extern NSString *const kLoginButtonAL;
+
 @interface LoginViewController : UIViewController
 
 

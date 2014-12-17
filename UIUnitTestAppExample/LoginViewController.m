@@ -8,32 +8,32 @@
 
 #import "LoginViewController.h"
 
-static NSString *const kEmailTextFieldAL    = @"kEmailTextFieldAL";
-static NSString *const kPasswordTextFieldAL = @"kPasswordTextFieldAL";
-static NSString *const kLoginButtonAL = @"kLoginButtonAL";
+NSString *const kEmailTextFieldAL    = @"kEmailTextFieldAL";
+NSString *const kPasswordTextFieldAL = @"kPasswordTextFieldAL";
+NSString *const kLoginButtonAL = @"kLoginButtonAL";
 
 @interface LoginViewController ()
 @property (nonatomic, weak) IBOutlet UITextField *emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
 @property (nonatomic, weak) IBOutlet UIButton *loginButton;
 
--(IBAction)loginButtonSelected:(id)sender;
+- (IBAction)loginButtonSelected:(id)sender;
 @end
 
 @implementation LoginViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.emailTextField.accessibilityLabel = kEmailTextFieldAL;
     self.passwordTextField.accessibilityLabel = kPasswordTextFieldAL;
     self.loginButton.accessibilityLabel = kLoginButtonAL;
-
 }
 
 #pragma mark - actions
--(IBAction)loginButtonSelected:(id)sender
+- (IBAction)loginButtonSelected:(id)sender
 {
-    
+
 }
 
 @end

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-KIF.xcscheme</key>
+		<key>Pods-UIUnitTestAppExampleTests-KIF.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-UIUnitTestAppExampleTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35930A336FB33CF92A65D497</key>
+		<key>02CA5F080CD3ABDDF80695C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E8AA75C1BBED508B4CD1124C</key>
+		<key>243BB0902E353AD635A76928</key>
 		<dict>
 			<key>primary</key>
 			<true/>

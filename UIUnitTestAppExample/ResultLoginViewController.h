@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const kResultLoginViewControllerAL;
+
 @interface ResultLoginViewController : UIViewController
 
 @end

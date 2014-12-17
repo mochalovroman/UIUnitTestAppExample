@@ -8,6 +8,8 @@
 
 #import "ResultLoginViewController.h"
 
+NSString *const kResultLoginViewControllerAL    = @"kResultLoginViewControllerAL";
+
 @interface ResultLoginViewController ()
 
 @end
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.accessibilityLabel = kResultLoginViewControllerAL;
 }
 
 - (void)didReceiveMemoryWarning {

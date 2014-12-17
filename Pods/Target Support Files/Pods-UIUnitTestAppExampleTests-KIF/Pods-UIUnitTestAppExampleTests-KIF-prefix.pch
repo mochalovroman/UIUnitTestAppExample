@@ -2,5 +2,5 @@
 #import <UIKit/UIKit.h>
 #endif
 
-#import "Pods-environment.h"
+#import "Pods-UIUnitTestAppExampleTests-environment.h"
 #import <CoreGraphics/CoreGraphics.h>
