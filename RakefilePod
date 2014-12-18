@@ -1,0 +1,8 @@
+require 'rubygems'
+
+desc "Install Pod's"
+task :podinstall do
+  sh "pod install"
+end
+
+task :default => :podinstall
