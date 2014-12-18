@@ -15,7 +15,7 @@ XCTasks::TestTask.new(:spec) do |t|
 
 
     # Specify a complete destination as a string
-    s.destination('platform=iOS Simulator,OS=8.1,name=iPhone 6')
+    s.destination('platform=iOS Simulator,OS=8.1,name=iPhone 5')
 
     # Quickly specify a physical device destination
   end
