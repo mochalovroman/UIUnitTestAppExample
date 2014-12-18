@@ -19,8 +19,13 @@
 
 - (void)test_enterText_email
 {
-    [system simulateDeviceRotationToOrientation:UIDeviceOrientationLandscapeLeft];
     [tester enterText:@"test1@test1.com" intoViewWithAccessibilityLabel:kEmailTextFieldAL];
+}
+
+- (void)test_rotate
+{
+    [system simulateDeviceRotationToOrientation:UIDeviceOrientationLandscapeLeft];
+    [system simulateDeviceRotationToOrientation:UIDeviceOrientationPortrait];
 }
 
 //- (void)test_selectAndCutEmail
@@ -46,7 +51,6 @@
 {
     [tester tapViewWithAccessibilityLabel:kLoginButtonAL];
     [tester waitForAbsenceOfViewWithAccessibilityLabel:kResultLoginViewControllerAL];
-    [system simulateDeviceRotationToOrientation:UIDeviceOrientationPortrait];
 }
 
 @end
