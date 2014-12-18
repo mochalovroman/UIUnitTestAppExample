@@ -26,4 +26,4 @@ XCTasks::TestTask.new(:spec) do |t|
   end
 end
 
-task :default => :spec
+task :default => :podinstall
