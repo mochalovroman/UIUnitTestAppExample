@@ -3,17 +3,12 @@ require 'bundler'
 Bundler.setup
 require 'xctasks/test_task'
 
-desc "Install Pod's"
-task :podinstall do
-  sh "pod install"
-end
-
 XCTasks::TestTask.new(:spec) do |t|
   t.workspace = 'UIUnitTestAppExample.xcworkspace'
   t.runner = :xctool
 
   t.subtask :functional do |s|
-    s.runner = :xcodebuild
+    s.runner = "xcpretty -t -c -r html"
     s.scheme = 'UIUnitTestAppExample'
     s.actions = %w{clean test}
 
