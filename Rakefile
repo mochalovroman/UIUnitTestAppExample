@@ -8,7 +8,7 @@ XCTasks::TestTask.new(:spec) do |t|
   t.runner = :xctool
 
   t.subtask :functional do |s|
-    s.runner = :xcodebuild
+    s.runner = 'xcpretty -r html'
     s.scheme = 'UIUnitTestAppExample'
     s.actions = %w{clean test}
 
